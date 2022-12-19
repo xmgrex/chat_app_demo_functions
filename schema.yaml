@@ -1,0 +1,35 @@
+social:
+  version:
+    users:
+      documentID: uid
+      displayName: String
+      photoURL: String
+      createdAt: Timestamp
+      updatedAt: Timestamp
+
+      participatingChatRooms:
+        documentID: directChatId or groupChatId
+        chatRef: DocumentReference
+        unreadMessageCount: int
+        latestBody: String
+        updatedAt: Timestamp
+
+      contacts:
+        documentID: userId
+        userRef: DocumentReference
+
+    chatRooms:
+      documentID: random
+      name: String
+      iconURL: String
+      userIds: [userId]
+      updatedAt: Timestamp
+
+      messages:
+        documentID: random
+        type: String
+        body: String
+        from: uid
+        createdAt: Timestamp
+
+
